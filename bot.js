@@ -225,6 +225,9 @@ client.on('message', message => {
 	   if(msg === ('roberto')){
 	 	message.reply({files:["./roberto.png"]});
 	 }
+	 if(msg === ('angel')){
+	 	message.reply({files:["./angel.png"]});
+	 }
 	  if(msg.includes('anxo')){
 	  	message.react('🐐');
 	 }
