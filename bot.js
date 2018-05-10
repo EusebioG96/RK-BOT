@@ -297,9 +297,10 @@ client.on('message', message => {
 
 	var channel = bot.channels.get('443789831517110273');
 
-	client.on('messageDelete', message => {
-		message.reply('message deleted');
-		//message.channel.send(message.contet);
+	client.on("messageDelete", (messageDelete) => {
+		 messageDelete.channel.send('The message : ' + messageDelete.content + 'was deleted by ' + messageDelete.author);
+		 messageDelete.reply('The message : ' + messageDelete.content + 'was deleted by ' + messageDelete.author);
+
 	});
 
 client.login(process.env.BOT_TOKEN);
