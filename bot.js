@@ -295,4 +295,9 @@ client.on('message', message => {
 		
 	});
 
+	client.on('messageDelete', message => {
+		var channel = bot.channels.get('443789831517110273');
+		message.channel.send(message.contet);
+	});
+
 client.login(process.env.BOT_TOKEN);
