@@ -295,12 +295,20 @@ client.on('message', message => {
 		
 	});
 
-	var channel = bot.channels.get('443789831517110273');
+	//var channel = bot.channels.get('443789831517110273');
 
-	client.on("messageDelete", (messageDelete) => {
-		 messageDelete.channel.send('The message : ' + messageDelete.content + 'was deleted by ' + messageDelete.author);
-		 messageDelete.reply('The message : ' + messageDelete.content + 'was deleted by ' + messageDelete.author);
+	client.on("messageDelete",  function(message) {
+		if(!message.author.bot){
+			if(message.guild){
+			const channel = message.guild.channels.find('name', 'bot-staff');
+			if(!channel) {
+				return;
+			}
+			channel.send(`message by ${message.member.user.username} deleted in 
+			${message.channel.name}: ${message.content}`);
+	}
+}
 
-	});
+});
 
 client.login(process.env.BOT_TOKEN);
