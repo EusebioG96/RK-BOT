@@ -162,6 +162,10 @@ client.on('message', message => {
     if(message.author.bot){
         return;
     }
+    if(message.author.username === "La anchoa esta"){
+			message.reply('Callate puto anxo');
+			return;
+		}
 
     var msg = message.content.toLowerCase();
    	if (msg === 'adios') {
