@@ -162,10 +162,6 @@ client.on('message', message => {
     if(message.author.bot){
         return;
     }
-    if(message.author.id === '329298559633719296'){
-			message.reply('Callate puto anxo');
-			return;
-		}
 
     var msg = message.content.toLowerCase();
    	if (msg === 'adios') {
@@ -236,6 +232,10 @@ client.on('message', message => {
 		var msg = message.content.toLowerCase();
 		
 		if(msg == 'fc_anxo'){
+			if(message.author.id === '329298559633719296'){
+			message.reply('Callate puto anxo');
+			return;
+		}
 			message.reply('SW-7838-8704-9868');
 		}
 		if(msg == 'fc_sasuke'){
