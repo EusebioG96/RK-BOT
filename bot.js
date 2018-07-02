@@ -229,7 +229,7 @@ client.on('message', message => {
 	
 	//FC
 	client.on('message', message => {
-		var msg = message.content();
+		var msg = message.content.toLowerCase();
 		
 		if(msg == 'fc_anxo'){
 			message.reply('SW-7838-8704-9868');
