@@ -167,14 +167,10 @@ client.on('message', message => {
    	if (msg === 'adios') {
     message.reply('por fin te vas paquete');
  	 }
-    if(msg === ('bueno')){
-    message.reply('Yo creo que si, veo potencial para TT');
- 	 }
     if(msg === ('españa')){
     message.reply('¡Arriba España coño!');
 	 }
 	 if(msg === ('gumer')){
-    message.reply('Me han dicho que ese tal Gumer es millonario');
     message.react('💰');
 	 }
 	 if(msg === ('suerte')){
@@ -219,9 +215,6 @@ client.on('message', message => {
 	  if(msg === ('alexony')){
 	 	message.reply('Ese esta sobrevalorado');
 	 }
-	  if(msg === ('emserio')){
-	 	message.reply('¿Pero qué necesidad habia de hacer eso?');
-	 }
 	   if(msg === ('roberto')){
 	 	message.reply({files:["./roberto.png"]});
 	 }
@@ -233,7 +226,81 @@ client.on('message', message => {
 	 }
 
 	});
-
+	
+	//FC
+	client.on('message', message => {
+		var msg = message.content();
+		
+		if(msg == 'fc_anxo'){
+			message.reply('SW-7838-8704-9868');
+		}
+		if(msg == 'fc_sasuke'){
+			message.reply('SW-6043-6394-4914');
+		}
+		if(msg == 'fc_ridley'){
+			message.reply('SW-7084-1573-4813');
+		}
+		if(msg == 'fc_alaix'){
+			message.reply('SW-8251-6155-2241');
+		}
+		if(msg == 'fc_acccoo'){
+			message.reply('SW-2044-6659-1122');
+		}
+		if(msg == 'fc_carloos'){
+			message.reply('SW-0634-9449-5204');
+		}
+		if(msg == 'fc_angel'){
+			message.reply('SW-4220-6298-9228');
+		}
+		if(msg == 'fc_jumo'){
+			message.reply('SW-7340-4187-2818');
+		}
+		if(msg == 'fc_marcyluigi'){
+			message.reply('SW-0260-8609-3711');
+		}
+		if(msg == 'fc_hams'){
+			message.reply('SW-6438-1369-4787');
+		}
+		if(msg == 'fc_eusebio'){
+			message.reply('SW-1045-9015-8435');
+		}
+		if(msg == 'fc_roberto'){
+			message.reply('SW-5084-5587-6602');
+		}
+		if(msg == 'fc_hernan'){
+			message.reply('SW-4584-7168-0994');
+		}
+		if(msg == 'fc_alexony'){
+			message.reply('SW-4025-5029-3527');
+		}
+		if(msg == 'fc_luigeon'){
+			message.reply('SW-1247-0736-0026');
+		}
+		if(msg == 'fc_sliver'){
+			message.reply('SW-8205-5202-3245');
+		}
+		if(msg == 'fc_javinci'){
+			message.reply('SW-5329-7377-6398');
+		}
+		if(msg == 'fc_reiik'){
+			message.reply('SW-2142-0514-4732');
+		}
+		if(msg == 'fc_patnagle'){
+			message.reply('SW-5128-2536-0804');
+		}
+		if(msg == 'fc_canoso'){
+			message.reply('SW-4513-2330-1929');
+		}
+		if(msg == 'fc_jordi'){
+			message.reply('SW-0165-7453-1139');
+		}
+		if(msg == 'fc_miguel'){
+			message.reply('SW-2933-4831-3410');
+		}
+		if(msg == 'fc_kolderiu'){
+			message.reply('SW-6781-2588-6592');
+		}
+	});
 
 	//MH
 	client.on('message', message => {
@@ -304,8 +371,7 @@ client.on('message', message => {
 			if(!channel) {
 				return;
 			}
-			channel.send(`message by ${message.member.user.username} deleted in 
-			${message.channel.name}: ${message.content}`);
+			channel.send(`message by ${message.member.user.username} deleted in ${message.channel.name}: ${message.content}`);
 	}
 }
 
