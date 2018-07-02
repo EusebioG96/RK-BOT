@@ -243,8 +243,7 @@ client.on('message', message => {
 			message.reply('SW-6043-6394-4914');
 		}
 		if(msg == 'fc_aragog'){
-			var topo = client.emojis.get("463483818175889408");
-			message.react('${topo}');
+			message.react("463483818175889408");
 		}
 		if(msg == 'fc_ridley'){
 			message.reply('SW-7084-1573-4813');
