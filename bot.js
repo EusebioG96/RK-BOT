@@ -162,7 +162,7 @@ client.on('message', message => {
     if(message.author.bot){
         return;
     }
-    if(message.author.username === "La anchoa esta"){
+    if(message.author.id === '329298559633719296'){
 			message.reply('Callate puto anxo');
 			return;
 		}
