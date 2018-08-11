@@ -234,6 +234,9 @@ client.on('message', message => {
 		if(msg == 'fc_anxo'){
 			message.reply('SW-7838-8704-9868');
 		}
+		if(msg == 'fc_spyke'){
+			message.reply('SW-1654-0874-6209');
+		}
 
 		if(msg == 'fc_sasuke'){
 			message.reply('SW-6043-6394-4914');
