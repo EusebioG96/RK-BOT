@@ -204,6 +204,9 @@ client.on('message', message => {
 	 if(msg === ('paco')){
 	 	message.reply('TRAZADAAAAAAAAAAAAAAAAAAAAAAAAA!');
 	 }
+	 if(msg === ('roberto')){
+	 	message.reply('Tranquilos que el pc si venía montado');
+	 }
 	  if(msg === ('!toxicos')){
 	 	message.reply('Nmms pinches RKs son retóxicos');
 	 }
@@ -387,5 +390,4 @@ client.on('message', message => {
 }
 
 });
-
 client.login(process.env.BOT_TOKEN);
